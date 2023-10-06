@@ -118,8 +118,8 @@ def test_app(req: Request) -> Response:
 
     .. sourcecode:: pycon
 
-        >>> from werkzeug.serving import run_simple
-        >>> from werkzeug.testapp import test_app
+        >>> from werkzeug import run_simple
+        >>> from werkzeug import test_app
         >>> run_simple('localhost', 3000, test_app)
          * Running on http://localhost:3000/
 

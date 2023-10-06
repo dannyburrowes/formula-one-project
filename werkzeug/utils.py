@@ -303,7 +303,7 @@ def append_slash_redirect(environ: WSGIEnvironment, code: int = 308) -> Response
     tail = environ["PATH_INFO"].rpartition("/")[2]
 
     if not tail:
-        new_path = "./"
+        new_path = "/"
     else:
         new_path = f"{tail}/"
 
